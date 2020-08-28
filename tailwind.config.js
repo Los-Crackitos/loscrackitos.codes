@@ -11,8 +11,12 @@ module.exports = {
       'light-blue': '#a8dadc',
       'blue': '#457b9d',
       'dark-blue': '#1d3557',
+      'golang': '#00add8',
+      'python': '#3572a5',
     },
   },
-  variants: {},
+  variants: {
+    border: ['hover'],
+  },
   plugins: [],
 };

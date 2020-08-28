@@ -5,7 +5,13 @@
 </script>
 
 <header class="flex justify-between items-start p-6">
-  <h1 class="text-xl">Los Crackitos</h1>
+  <div class="inline-flex">
+    <h1>Los Crackitos</h1>
+    <nav>
+      <a href="#about" class="ml-6">About</a>
+      <a href="#projects" class="ml-6">Projects</a>
+    </nav>
+  </div>
   <div class="inline-flex">
     <LanguageSelector />
     <span class="border-l border{isDarkTheme ? '' : '-dark'}-blue m-3"></span>

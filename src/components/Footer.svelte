@@ -6,7 +6,7 @@
   const currentYear = new Date().getFullYear();
 </script>
 
-<footer class="flex justify-between flex-wrap p-6">
+<footer class="flex justify-between flex-wrap px-6 pt-6">
   <p class="w-full text-center pb-5 md:p-0 md:w-auto">
     {$t('made_with')} 🍺 {$t('in')}
     <Link

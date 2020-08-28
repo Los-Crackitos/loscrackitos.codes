@@ -25,5 +25,6 @@ module.exports = {
     'import/first': 'off',
     'import/export': 'off',
     'import/no-mutable-exports': 'off',
+    'import/prefer-default-export': 'off',
   },
 };

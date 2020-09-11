@@ -13,6 +13,9 @@ module.exports = {
       'dark-blue': '#1d3557',
       'golang': '#00add8',
       'python': '#3572a5',
+      'dark-green': '#073B4C',
+      'light-green-800': '#06D6A0',
+      'light-green-500': '#4DF9C9',
     },
   },
   variants: {

@@ -55,7 +55,7 @@
   ];
 </script>
 
-<div class="flex flex-col sm:flex-row justify-center items-center">
+<div class="my-24 flex flex-col lg:flex-row justify-center items-center">
   {#each avatars as avatar}
     <Avatar {avatar} />
   {/each}

@@ -5,7 +5,7 @@
 </script>
 
 <div class="w-full lg:w-2/4 py-12 flex justify-center px-6">
-  <div class="w-full h-full lg:h-64 px-2 rounded overflow-hidden shadow-lg flex flex-col lg:flex-row items-center">
+  <div class="w-full h-full lg:h-auto px-2 rounded overflow-hidden shadow-lg flex flex-col lg:flex-row items-center">
     <div class="flex justify-center w-full">
       <img class="w-24 h-24 rounded-full" src="{avatar.img}" alt="{$t('avatar')} {avatar.name}" />
     </div>

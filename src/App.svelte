@@ -13,9 +13,7 @@
       <h1 class="text-center uppercase text-5xl font-hairline">{$t('hello')} Los Crackitos</h1>
     </div>
   </section>
-  <section class="h-screen flex items-center">
-    <About />
-  </section>
+  <About />
   <section class="h-16 flex flex-col justify-between">
     <Footer />
   </section>

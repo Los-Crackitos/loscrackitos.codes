@@ -3,6 +3,8 @@
   import LogoGitHub32 from 'carbon-icons-svelte/lib/LogoGithub32';
   import LogoLinkedIn32 from 'carbon-icons-svelte/lib/LogoLinkedin32';
   import LogoTwitter32 from 'carbon-icons-svelte/lib/LogoTwitter32';
+  import Events32 from 'carbon-icons-svelte/lib/Events32';
+  import Title from './_shared/Title.svelte';
   import Avatar from './Avatar.svelte';
 
   const avatars = [
@@ -55,8 +57,13 @@
   ];
 </script>
 
-<div class="my-24 flex flex-col lg:flex-row justify-center items-center">
-  {#each avatars as avatar}
-    <Avatar {avatar} />
-  {/each}
-</div>
+<section>
+  <Title title="About">
+    <Events32 />
+  </Title>
+  <div class="my-24 flex flex-col lg:flex-row justify-center items-center">
+    {#each avatars as avatar}
+      <Avatar {avatar} />
+    {/each}
+  </div>
+</section>

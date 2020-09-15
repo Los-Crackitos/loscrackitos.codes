@@ -4,5 +4,10 @@
   "made_with": "Made with",
   "robin_bio": "Co-founder of Los-Crackitos and Lille Gophers. Passionate about Open Source and its possibilities, I try to promote this mindset through my professional experiences and the Los-Crackitos organization. Curious, dynamic and motivated, I am constantly on technological watch and ready to try the latest technologies.",
   "jerome_bio": "Co-founder of Los-Crackitos and Lille Gophers.",
-  "avatar": "Avatar of"
+  "avatar": "Avatar of",
+  "projects_descriptions": {
+    "excelante": "Excelante is an API used to read and write Excel files through HTTP requests",
+    "transport-api": "Transport API get real-time transports data to be used inside a mobile application",
+    "svelte-tailwind-i18n-template": "Svelte project template with Tailwindcss and internationalization pre-configured"
+  }
 }

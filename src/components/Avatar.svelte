@@ -1,5 +1,6 @@
 <script>
   import { t } from 'svelte-i18n';
+  import Link from './_shared/Link.svelte';
 
   export let avatar;
 </script>
@@ -17,9 +18,9 @@
     </div>
     <div class="px-6 pt-4 pb-2 flex flex-row space-x-4 lg:flex-col lg:space-y-4 lg:space-x-reverse">
       {#each avatar.links as externalLink}
-        <a href="{externalLink.url}">
+        <Link href="{externalLink.url}">
           <svelte:component this="{externalLink.icon}" />
-        </a>
+        </Link>
       {/each}
     </div>
   </div>

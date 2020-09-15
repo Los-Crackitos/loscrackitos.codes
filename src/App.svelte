@@ -7,8 +7,8 @@
   import { isDarkTheme } from './stores';
 </script>
 
-<main class="{$isDarkTheme ? 'bg-dark-blue text-blue' : 'bg-white text-dark-blue'}">
-  <section class="h-screen flex flex-col justify-between">
+<main class="{$isDarkTheme ? 'bg-dark-green text-white' : 'bg-blue-ncs text-dark-green'}">
+  <section class="h-screen flex flex-col justify-between ">
     <Header />
     <div class="h-full flex items-center justify-center">
       <h1 class="text-center uppercase text-5xl font-hairline">{$t('hello')} Los Crackitos</h1>

@@ -80,7 +80,8 @@
   ];
 </script>
 
-<section class="flex flex-col bg-gradient-to-br from-dark-blue to-blue">
+<!--<section class="flex flex-col bg-gradient-to-br from-dark-green to-blue">-->
+<section class="flex flex-col">
   <Title title="Projects">
     <FolderDetails32 />
   </Title>

@@ -17,7 +17,7 @@
         },
         {
           type: 'info',
-          value: 16,
+          value: 17,
           icon: Star20,
         },
         {

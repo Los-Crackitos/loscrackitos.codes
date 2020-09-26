@@ -61,9 +61,7 @@
   <Title title="About">
     <Events32 />
   </Title>
-  <div
-    class="my-24 flex flex-col lg:flex-row justify-center items-centern bg-gradient-to-r from-light-green-500
-    to-light-green-800">
+  <div class="mt-20 flex flex-col lg:flex-row justify-center items-centern bg-green">
     {#each avatars as avatar}
       <Avatar {avatar} />
     {/each}

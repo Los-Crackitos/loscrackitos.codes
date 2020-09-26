@@ -7,7 +7,7 @@
   import { isDarkTheme } from './stores';
 </script>
 
-<main class="{$isDarkTheme ? 'bg-dark-green text-white' : 'bg-blue-ncs text-dark-green'}">
+<main class="{$isDarkTheme ? 'bg-dark-theme text-white' : 'bg-light-theme text-dark-green'}">
   <section class="h-screen flex flex-col justify-between ">
     <Header />
     <div class="h-full flex items-center justify-center">

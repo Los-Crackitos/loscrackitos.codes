@@ -14,8 +14,15 @@ module.exports = {
       'golang': '#00add8',
       'python': '#3572a5',
       'dark-green': '#073B4C',
-      'light-green-800': '#06D6A0',
-      'light-green-500': '#4DF9C9',
+      'green': '#31ebb9',
+    },
+    extend: {
+      backgroundImage: () => ({
+        'dark-theme':
+          'linear-gradient(400deg,#073b4c 75%,#31ebb9 0),linear-gradient(58deg,#073b4c 27%,#31ebb9 82%),linear-gradient(262deg,#fddaca 49%,#fefbfb 68%)',
+        'light-theme':
+          'linear-gradient(400deg,#f1faee 75%,#31ebb9 0),linear-gradient(58deg,#f1faee 27%,#31ebb9 82%),linear-gradient(262deg,#f1faee 49%,#fefbfb 68%)',
+      }),
     },
   },
   variants: {

@@ -77,6 +77,31 @@
         },
       ],
     },
+    {
+      title: 'sendver',
+      repository: 'https://github.com/Los-Crackitos/Sendver',
+      details: [
+        {
+          type: 'language',
+          value: 'JavaScript',
+        },
+        {
+          type: 'info',
+          value: 1,
+          icon: Star20,
+        },
+        {
+          type: 'info',
+          value: 0,
+          icon: Fork20,
+        },
+        {
+          type: 'info',
+          value: 'MIT',
+          icon: Certificate20,
+        },
+      ],
+    },
   ];
 </script>
 

@@ -8,6 +8,7 @@
   "projects_descriptions": {
     "excelante": "Excelante est une API permettant de lire et écrire des fichiers Excel à travers des requêtes HTTP",
     "transport-api": "Transport API récupère en temps réel les données des transports pour les utiliser dans une application mobile",
-    "svelte-tailwind-i18n-template": "Template d'un projet Svelte avec Tailwindcss et internationalisation pre-configuré"
+    "svelte-tailwind-i18n-template": "Template d'un projet Svelte avec Tailwindcss et internationalisation pre-configuré",
+    "sendver": "Server node js permettant d'envoyer des emails à travers de requêtes HTTP POST"
   }
 }

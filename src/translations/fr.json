@@ -10,5 +10,6 @@
     "transport-api": "Transport API récupère en temps réel les données des transports pour les utiliser dans une application mobile",
     "svelte-tailwind-i18n-template": "Template d'un projet Svelte avec Tailwindcss et internationalisation pre-configuré",
     "sendver": "Server node js permettant d'envoyer des emails à travers des requêtes HTTP POST"
-  }
+  },
+  "description": "Une organisation github Open Source. Nous souhaitons promouvoir l'état d'esprit Open Source à travers nos projets. N'hésitez pas à nous contacter pour parler de l'Open source ou de nos projets"
 }

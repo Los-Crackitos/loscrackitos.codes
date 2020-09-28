@@ -6,6 +6,8 @@
   import Title from './_shared/Title.svelte';
   import ProjectCard from './ProjectCard.svelte';
 
+  import { isDarkTheme } from '../stores';
+
   const projects = [
     {
       title: 'excelante',
@@ -105,8 +107,9 @@
   ];
 </script>
 
-<!--<section class="flex flex-col bg-gradient-to-br from-dark-green to-blue">-->
-<section class="flex flex-col">
+<section
+  class="flex flex-col pt-8"
+  style="background-image: linear-gradient(4deg, {$isDarkTheme ? '#073B4C' : 'white'} 83%, #e01d67 83.5%);">
   <Title title="Projects">
     <FolderDetails32 />
   </Title>

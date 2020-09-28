@@ -1,8 +1,14 @@
 <script>
+  import { isDarkTheme } from '../../stores';
+
   export let href;
   export let title;
 </script>
 
-<a {href} target="_blank" {title} class="font-bold hover:underline fill-current hover:text-red">
+<a
+  {href}
+  target="_blank"
+  {title}
+  class="font-bold hover:underline fill-current hover:text-{$isDarkTheme ? 'dark-green' : 'white'}">
   <slot />
 </a>

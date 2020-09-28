@@ -7,11 +7,12 @@
   import { isDarkTheme } from './stores';
 </script>
 
-<main class="{$isDarkTheme ? 'bg-dark-green text-white' : 'bg-blue-ncs text-dark-green'}">
+<main class="{$isDarkTheme ? 'bg-dark-green text-white' : 'white text-dark-green'}">
   <section class="h-screen flex flex-col justify-between ">
     <Header />
-    <div class="h-full flex items-center justify-center">
-      <h1 class="text-center uppercase text-5xl font-hairline">{$t('hello')} Los Crackitos</h1>
+    <div class="h-full flex flex-col items-center justify-center">
+      <h1 class="flex text-center uppercase text-5xl font-hairline">{$t('hello')} Los Crackitos</h1>
+      <span class="w-1/4 flex">{$t('description')}</span>
     </div>
   </section>
   <About />

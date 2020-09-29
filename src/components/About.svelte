@@ -7,6 +7,8 @@
   import Title from './_shared/Title.svelte';
   import Avatar from './Avatar.svelte';
 
+  import { isDarkTheme } from '../stores';
+
   const avatars = [
     {
       name: 'Jérôme Pogeant',
@@ -57,13 +59,13 @@
   ];
 </script>
 
-<section>
+<section
+  class="pt-8 mt-8"
+  style="background-image: linear-gradient(4deg, #e01d67 75%, {$isDarkTheme ? '#073B4C' : 'white'} 75.5%);">
   <Title title="About">
     <Events32 />
   </Title>
-  <div
-    class="my-24 flex flex-col lg:flex-row justify-center items-centern bg-gradient-to-r from-light-green-500
-    to-light-green-800">
+  <div class="flex flex-col lg:flex-row justify-center items-centern ">
     {#each avatars as avatar}
       <Avatar {avatar} />
     {/each}

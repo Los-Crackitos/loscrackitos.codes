@@ -10,5 +10,6 @@
     "transport-api": "Transport API get real-time transports data to be used inside a mobile application",
     "svelte-tailwind-i18n-template": "Svelte project template with Tailwindcss and internationalization pre-configured",
     "sendver": "A tiny node js server that can allow to send email from http POST request."
-  }
+  },
+  "description": "An Open source github organization. We want to promote Open Source mindset through our projects. Feel free to contact us to talk about Open source or about our project."
 }

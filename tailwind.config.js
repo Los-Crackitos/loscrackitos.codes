@@ -5,8 +5,7 @@ module.exports = {
   theme: {
     colors: {
       'white': '#f1faee',
-      'light-red': '#e94957',
-      'red': '#e63946',
+      'red': '#e01d67',
       'dark-red': '#e42535',
       'light-blue': '#a8dadc',
       'blue': '#457b9d',
@@ -14,8 +13,6 @@ module.exports = {
       'golang': '#00add8',
       'python': '#3572a5',
       'dark-green': '#073B4C',
-      'light-green-800': '#06D6A0',
-      'light-green-500': '#4DF9C9',
     },
   },
   variants: {

@@ -3,6 +3,11 @@ import App from './App.svelte';
 import './components/Tailwind.svelte';
 import './i18n';
 
+import '../public/images/home_bg_dark.jpg';
+import '../public/images/home_bg_light.jpg';
+import '../public/images/jerome.jpg';
+import '../public/images/robin.jpg';
+
 const fallbackLocale = 'en-US';
 const navigatorLocale = getLocaleFromNavigator();
 

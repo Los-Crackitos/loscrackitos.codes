@@ -6,8 +6,6 @@
   import Title from './_shared/Title.svelte';
   import ProjectCard from './ProjectCard.svelte';
 
-  import { isDarkTheme } from '../stores';
-
   const projects = [
     {
       title: 'excelante',
@@ -16,6 +14,7 @@
         {
           type: 'language',
           value: 'Go',
+          color: '#00add8',
         },
         {
           type: 'info',
@@ -41,6 +40,7 @@
         {
           type: 'language',
           value: 'Python',
+          color: '#3572a5',
         },
         {
           type: 'info',
@@ -66,6 +66,7 @@
         {
           type: 'language',
           value: 'JavaScript',
+          color: '#f1e05a',
         },
         {
           type: 'info',
@@ -86,6 +87,7 @@
         {
           type: 'language',
           value: 'JavaScript',
+          color: '#f1e05a',
         },
         {
           type: 'info',
@@ -107,17 +109,16 @@
   ];
 </script>
 
-<section
-  class="flex flex-col pt-8"
-  style="background-image: linear-gradient(4deg, {$isDarkTheme ? '#073B4C' : 'white'} 83%, #e01d67 83.5%);">
+<section>
   <Title title="Projects">
     <FolderDetails32 />
   </Title>
-  <div class="mx-12 my-48 flex flex-col lg:flex-row justify-center">
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mx-12 my-6">
     {#each projects as project}
-      <a href="{project.repository}" target="_blank" class="min-h-full my-5 lg:mx-5 lg:my-0">
+      <a href="{project.repository}" rel="noreferrer" target="_blank">
         <ProjectCard title="{project.title}" details="{project.details}" />
       </a>
     {/each}
   </div>
 </section>
+<div class="py-24" style="background: linear-gradient(358deg, #e01d67 50%, rgba(0,0,0,0) 50.3%)"></div>

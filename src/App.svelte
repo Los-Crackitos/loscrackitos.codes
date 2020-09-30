@@ -1,20 +1,13 @@
 <script>
-  import { t } from 'svelte-i18n';
-  import Header from './components/Header.svelte';
+  import Home from './components/Home.svelte';
   import Footer from './components/Footer.svelte';
   import About from './components/About.svelte';
   import Projects from './components/Projects.svelte';
   import { isDarkTheme } from './stores';
 </script>
 
-<main class="{$isDarkTheme ? 'bg-dark-green text-white' : 'white text-dark-green'}">
-  <section class="h-screen flex flex-col justify-between ">
-    <Header />
-    <div class="h-full flex flex-col items-center justify-center">
-      <h1 class="flex text-center uppercase text-5xl font-hairline">{$t('hello')} Los Crackitos</h1>
-      <span class="w-1/4 flex">{$t('description')}</span>
-    </div>
-  </section>
+<main class="{$isDarkTheme ? 'bg-green text-white' : 'bg-white text-green'}">
+  <Home />
   <About />
   <Projects />
   <section class="h-16 flex flex-col justify-between">

@@ -1,15 +1,16 @@
 {
-  "hello": "bonjour",
   "on": "sur",
   "made_with": "Créé avec",
-  "robin_bio": "Co-fondateur de Los-Crackitos et de Lille Gophers. Passioné par l'Open Source et les possiblités de celui-ci, j'essaie de promouvoir cette manière de penser à travers mes expériences professionnelles et l'organisation Los-Crackitos. Curieux, dynamique et motivé, je suis constament en veille technologique et prêt à 'poc' les dernières technologies",
-  "jerome_bio": "Co-fondateur de Los-Crackitos et de Lille Gophers.",
+  "robin_bio": "Co-fondateur de Los-Crackitos et de Lille Gophers. Passioné par l'Open Source et les possiblités de celui-ci, j'essaie de promouvoir cette manière de penser à travers mes expériences professionnelles et l'organisation Los-Crackitos. Curieux, dynamique et motivé, je suis constament en veille technologique et prêt à 'poc' les dernières technologies.",
+  "jerome_bio": "Développeur Full Stack qui adore le JavaScript, le Go et Linux 🐧. J'essaie de m'investir au maximum dans des projets Open Source en tout genre et pourquoi pas pouvoir en vivre un jour. Je suis également co-fondateur de Los-Crackitos et de Lille Gophers.",
   "avatar": "Photo de",
+  "visit": "Aller voir le {profile} de {name}",
   "projects_descriptions": {
     "excelante": "Excelante est une API permettant de lire et écrire des fichiers Excel à travers des requêtes HTTP",
     "transport-api": "Transport API récupère en temps réel les données des transports pour les utiliser dans une application mobile",
     "svelte-tailwind-i18n-template": "Template d'un projet Svelte avec Tailwindcss et internationalisation pre-configuré",
     "sendver": "Server node js permettant d'envoyer des emails à travers des requêtes HTTP POST"
   },
-  "description": "Une organisation github Open Source. Nous souhaitons promouvoir l'état d'esprit Open Source à travers nos projets. N'hésitez pas à nous contacter pour parler de l'Open source ou de nos projets"
+  "description": "Une organisation Github Open Source. Nous souhaitons promouvoir l'état d'esprit Open Source à travers nos projets. N'hésitez pas à nous contacter pour parler de l'Open source ou de nos projets",
+  "fork": "Fork ce site web sur Github"
 }

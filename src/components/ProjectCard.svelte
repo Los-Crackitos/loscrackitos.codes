@@ -7,8 +7,8 @@
 </script>
 
 <div
-  class="min-h-full flex flex-col justify-between rounded border transition duration-300 ease-in-out hover:border-red
-  p-6">
+  class="min-h-full flex flex-col justify-between rounded-lg border shadow-lg transition duration-300 ease-in-out
+  hover:border-pink p-6">
   <p class="text-xl font-bold inline-flex items-center">
     <span class="mr-2">
       <Folder24 />
@@ -19,7 +19,9 @@
   <div>
     {#each details as detail}
       <p class="inline-flex items-center align-middle mr-3">
-        <span class="mr-1 {detail.type === 'language' ? 'bg-light-red rounded-full w-3 h-3' : ''}">
+        <span
+          class="mr-1 {detail.type === 'language' ? `rounded-full w-3 h-3` : ''}"
+          style="background-color: {detail.color}">
           {#if detail.type !== 'language'}
             <svelte:component this="{detail.icon}" />
           {/if}

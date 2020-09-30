@@ -3,7 +3,6 @@
   import { locale, locales } from 'svelte-i18n';
   import FlagFR from '../../public/images/flag-fr.svg';
   import FlagGB from '../../public/images/flag-gb.svg';
-  import { isDarkTheme } from '../stores';
 
   const sortLocales = () => {
     const allLocales = [...[$locale], ...$locales];
@@ -40,8 +39,7 @@
     {#each $orderedLocales as locale, index}
       <li
         on:click="{toggleLanguage(locale)}"
-        class="{index === 0 ? 'pr-3' : 'pl-3'} border-r border{isDarkTheme ? '' : '-dark'}-blue cursor-pointer
-        first:cursor-default">
+        class="{index === 0 ? 'pr-3' : 'pl-3'} border-r border-pink cursor-pointer first:cursor-default">
         {#if locale === 'en-US'}
           <FlagGB height="20" class="rounded-full" />
         {:else}

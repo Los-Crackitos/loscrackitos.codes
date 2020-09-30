@@ -5,23 +5,23 @@
   export let avatar;
 </script>
 
-<div class="w-full lg:w-2/4 py-12 flex justify-center px-6">
-  <div class="w-full h-full lg:h-auto px-2 rounded overflow-hidden shadow-lg flex flex-col lg:flex-row items-center">
-    <div class="flex justify-center w-full">
-      <img class="w-24 h-24 rounded-full" src="{avatar.img}" alt="{$t('avatar')} {avatar.name}" />
+<div class="flex flex-col lg:flex-row items-center rounded-lg overflow-hidden border shadow-lg p-6">
+  <div class="flex justify-center">
+    <img class="w-24 h-24 rounded-full m-6" src="{avatar.img}" alt="{$t('avatar')} {avatar.name}" />
+  </div>
+  <div class="flex flex-col w-full">
+    <div class="text-center lg:text-left mx-6">
+      <div class="font-bold text-xl mb-2">{avatar.name}</div>
+      <p>{$t(avatar.bio)}</p>
     </div>
-    <div class="flex flex-col w-full">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">{avatar.name}</div>
-        <p class="text-gray-700 text-base">{$t(avatar.bio)}</p>
-      </div>
-    </div>
-    <div class="px-6 pt-4 pb-2 flex flex-row space-x-4 lg:flex-col lg:space-y-4 lg:space-x-reverse">
-      {#each avatar.links as externalLink}
-        <Link href="{externalLink.url}">
-          <svelte:component this="{externalLink.icon}" />
-        </Link>
-      {/each}
-    </div>
+  </div>
+  <div class="flex flex-row lg:flex-col space-x-4 lg:space-y-4 lg:space-x-reverse mt-6 lg:mt-0">
+    {#each avatar.links as externalLink}
+      <Link
+        href="{externalLink.url}"
+        title="{$t('visit', { values: { profile: externalLink.linkTitle, name: avatar.name } })}">
+        <svelte:component this="{externalLink.icon}" />
+      </Link>
+    {/each}
   </div>
 </div>

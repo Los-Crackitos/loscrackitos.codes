@@ -1,5 +1,6 @@
 import childProcess from 'child_process';
 import commonjs from '@rollup/plugin-commonjs';
+import imagemin from 'rollup-plugin-imagemin';
 import json from '@rollup/plugin-json';
 import livereload from 'rollup-plugin-livereload';
 import postcss from 'rollup-plugin-postcss';
@@ -52,10 +53,15 @@ export default {
       dev: !production,
       emitCss: true,
       css: (css) => {
-        css.write('public/build/bundle.css');
+        css.write('bundle.css');
       },
     }),
     svelteSVG(),
+    imagemin({
+      include: '**/*.jpg',
+      fileName: '[name]-op[extname]',
+      publicPath: 'images',
+    }),
     resolve({
       browser: true,
       dedupe: ['svelte'],
